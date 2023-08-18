@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="GraduationWorkDbDataSet" targetNamespace="http://tempuri.org/GraduationWorkDbDataSet.xsd" xmlns:mstns="http://tempuri.org/GraduationWorkDbDataSet.xsd" xmlns="http://tempuri.org/GraduationWorkDbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="GraduationWorkDbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="GraduationWorkDbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GraduationWork.Properties.Settings.GlobalReference.Default.GraduationWorkDbConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EquipmentTableAdapter" GeneratorDataComponentClassName="EquipmentTableAdapter" Name="Equipment" UserDataComponentName="EquipmentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="GraduationWorkDbConnectionString (Settings)" DbObjectName="GraduationWorkDb.dbo.Equipment" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Equipment] WHERE (([Id] = @Original_Id) AND ((@IsNull_Вид = 1 AND [Вид] IS NULL) OR ([Вид] = @Original_Вид)) AND ((@IsNull_Тип = 1 AND [Тип] IS NULL) OR ([Тип] = @Original_Тип)) AND ((@IsNull_Модель = 1 AND [Модель] IS NULL) OR ([Модель] = @Original_Модель)) AND ((@IsNull_Компания = 1 AND [Компания] IS NULL) OR ([Компания] = @Original_Компания)) AND ((@IsNull_Филиал = 1 AND [Филиал] IS NULL) OR ([Филиал] = @Original_Филиал)) AND ((@IsNull_Статус = 1 AND [Статус] IS NULL) OR ([Статус] = @Original_Статус)) AND ((@IsNull_Сотрудник = 1 AND [Сотрудник] IS NULL) OR ([Сотрудник] = @Original_Сотрудник)) AND ((@IsNull_Серийный_номер = 1 AND [Серийный номер] IS NULL) OR ([Серийный номер] = @Original_Серийный_номер)) AND ((@IsNull_Инвентарный_номер = 1 AND [Инвентарный номер] IS NULL) OR ([Инвентарный номер] = @Original_Инвентарный_номер)) AND ((@IsNull_Номер_партии = 1 AND [Номер партии] IS NULL) OR ([Номер партии] = @Original_Номер_партии)) AND ((@IsNull_Место = 1 AND [Место] IS NULL) OR ([Место] = @Original_Место)) AND ((@IsNull_Код_продукта = 1 AND [Код продукта] IS NULL) OR ([Код продукта] = @Original_Код_продукта)) AND ((@IsNull_Количество = 1 AND [Количество] IS NULL) OR ([Количество] = @Original_Количество)) AND ((@p3 = 1 AND [Стоимость (руб.)] IS NULL) OR ([Стоимость (руб.)] = @p2)) AND ((@p6 = 1 AND [Сумма (руб.)] IS NULL) OR ([Сумма (руб.)] = @p5)) AND ((@IsNull_Поставщик = 1 AND [Поставщик] IS NULL) OR ([Поставщик] = @Original_Поставщик)) AND ((@IsNull_Сервисная_организация = 1 AND [Сервисная организация] IS NULL) OR ([Сервисная организация] = @Original_Сервисная_организация)) AND ((@IsNull_Дата_инвентаризации = 1 AND [Дата инвентаризации] IS NULL) OR ([Дата инвентаризации] = @Original_Дата_инвентаризации)) AND ((@IsNull_Гарантия_до = 1 AND [Гарантия до] IS NULL) OR ([Гарантия до] = @Original_Гарантия_до)) AND ((@IsNull_Лицензия_до = 1 AND [Лицензия до] IS NULL) OR ([Лицензия до] = @Original_Лицензия_до)) AND ((@IsNull_Дата_списания = 1 AND [Дата списания] IS NULL) OR ([Дата списания] = @Original_Дата_списания)) AND ((@IsNull_Дата_создания = 1 AND [Дата создания] IS NULL) OR ([Дата создания] = @Original_Дата_создания)) AND ((@IsNull_Id_заказа = 1 AND [Id заказа] IS NULL) OR ([Id заказа] = @Original_Id_заказа)) AND ((@IsNull_Не_участвует_в_инвентаризации = 1 AND [Не участвует в инвентаризации] IS NULL) OR ([Не участвует в инвентаризации] = @Original_Не_участвует_в_инвентаризации)) AND ((@IsNull_Домен = 1 AND [Домен] IS NULL) OR ([Домен] = @Original_Домен)) AND ((@IsNull_Сетевое_имя = 1 AND [Сетевое имя] IS NULL) OR ([Сетевое имя] = @Original_Сетевое_имя)) AND ((@IsNull_IP_адрес = 1 AND [IP адрес] IS NULL) OR ([IP адрес] = @Original_IP_адрес)) AND ((@IsNull_MAC_адрес = 1 AND [MAC адрес] IS NULL) OR ([MAC адрес] = @Original_MAC_адрес)) AND ((@IsNull_Изменил = 1 AND [Изменил] IS NULL) OR ([Изменил] = @Original_Изменил)) AND ((@IsNull_Дата_изменения = 1 AND [Дата изменения] IS NULL) OR ([Дата изменения] = @Original_Дата_изменения)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Вид" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Вид" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Вид" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Вид" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Тип" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Тип" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Тип" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Тип" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Модель" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Модель" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Модель" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Модель" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Компания" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Компания" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Компания" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Компания" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Филиал" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Филиал" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Филиал" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Филиал" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Статус" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Статус" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Статус" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Статус" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Сотрудник" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Сотрудник" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Сотрудник" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Сотрудник" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Серийный_номер" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Серийный номер" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Серийный_номер" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Серийный номер" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Инвентарный_номер" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Инвентарный номер" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Инвентарный_номер" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Инвентарный номер" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Номер_партии" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Номер партии" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Номер_партии" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Номер партии" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Место" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Место" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Место" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Место" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Код_продукта" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Код продукта" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Код_продукта" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Код продукта" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Количество" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Количество" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Количество" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Количество" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Стоимость (руб.)" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@p2" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Стоимость (руб.)" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Сумма (руб.)" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@p5" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Сумма (руб.)" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Поставщик" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Поставщик" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Поставщик" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Поставщик" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Сервисная_организация" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Сервисная организация" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Сервисная_организация" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Сервисная организация" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Дата_инвентаризации" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Дата инвентаризации" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Дата_инвентаризации" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата инвентаризации" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Гарантия_до" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Гарантия до" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Гарантия_до" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Гарантия до" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Лицензия_до" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Лицензия до" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Лицензия_до" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Лицензия до" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Дата_списания" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Дата списания" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Дата_списания" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата списания" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Дата_создания" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Дата создания" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Дата_создания" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата создания" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Id_заказа" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id заказа" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Id_заказа" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Id заказа" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Не_участвует_в_инвентаризации" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Не участвует в инвентаризации" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Не_участвует_в_инвентаризации" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Не участвует в инвентаризации" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Домен" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Домен" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Домен" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Домен" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Сетевое_имя" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Сетевое имя" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Сетевое_имя" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Сетевое имя" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_IP_адрес" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IP адрес" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_IP_адрес" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IP адрес" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MAC_адрес" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MAC адрес" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MAC_адрес" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MAC адрес" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Изменил" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Изменил" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Изменил" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Изменил" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Дата_изменения" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Дата изменения" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_Дата_изменения" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Дата изменения" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Equipment] ([Id], [Вид], [Тип], [Модель], [Компания], [Филиал], [Статус], [Сотрудник], [Серийный номер], [Инвентарный номер], [Номер партии], [Место], [Код продукта], [Количество], [Стоимость (руб.)], [Сумма (руб.)], [Поставщик], [Сервисная организация], [Дата инвентаризации], [Гарантия до], [Лицензия до], [Дата списания], [Дата создания], [Id заказа], [Не участвует в инвентаризации], [Домен], [Сетевое имя], [IP адрес], [MAC адрес], [Изменил], [Дата изменения]) VALUES (@Id, @Вид, @Тип, @Модель, @Компания, @Филиал, @Статус, @Сотрудник, @Серийный_номер, @Инвентарный_номер, @Номер_партии, @Место, @Код_продукта, @Количество, @p1, @p4, @Поставщик, @Сервисная_организация, @Дата_инвентаризации, @Гарантия_до, @Лицензия_до, @Дата_списания, @Дата_создания, @Id_заказа, @Не_участвует_в_инвентаризации, @Домен, @Сетевое_имя, @IP_адрес, @MAC_адрес, @Изменил, @Дата_изменения);
+SELECT Id, Вид, Тип, Модель, Компания, Филиал, Статус, Сотрудник, [Серийный номер], [Инвентарный номер], [Номер партии], Место, [Код продукта], Количество, [Стоимость (руб.)], [Сумма (руб.)], Поставщик, [Сервисная организация], [Дата инвентаризации], [Гарантия до], [Лицензия до], [Дата списания], [Дата создания], [Id заказа], [Не участвует в инвентаризации], Домен, [Сетевое имя], [IP адрес], [MAC адрес], Изменил, [Дата изменения] FROM Equipment WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Вид" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Вид" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Тип" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Тип" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Модель" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Модель" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Компания" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Компания" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Филиал" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Филиал" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Статус" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Статус" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Сотрудник" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Сотрудник" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Серийный_номер" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Серийный номер" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Инвентарный_номер" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Инвентарный номер" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Номер_партии" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Номер партии" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Место" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Место" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Код_продукта" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Код продукта" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Количество" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Количество" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@p1" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Стоимость (руб.)" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@p4" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Сумма (руб.)" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Поставщик" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Поставщик" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Сервисная_организация" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Сервисная организация" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Дата_инвентаризации" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата инвентаризации" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Гарантия_до" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Гарантия до" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Лицензия_до" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Лицензия до" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Дата_списания" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата списания" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Дата_создания" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата создания" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Id_заказа" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Id заказа" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Не_участвует_в_инвентаризации" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Не участвует в инвентаризации" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Домен" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Домен" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Сетевое_имя" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Сетевое имя" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@IP_адрес" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IP адрес" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MAC_адрес" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MAC адрес" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Изменил" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Изменил" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Дата_изменения" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Дата изменения" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Id, Вид, Тип, Модель, Компания, Филиал, Статус, Сотрудник, [Серийный номер], [Инвентарный номер], [Номер партии], Место, [Код продукта], Количество, [Стоимость (руб.)], [Сумма (руб.)], Поставщик, [Сервисная организация], [Дата инвентаризации], [Гарантия до], [Лицензия до], [Дата списания], [Дата создания], [Id заказа], [Не участвует в инвентаризации], Домен, [Сетевое имя], [IP адрес], [MAC адрес], Изменил, [Дата изменения] FROM dbo.Equipment</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Equipment] SET [Id] = @Id, [Вид] = @Вид, [Тип] = @Тип, [Модель] = @Модель, [Компания] = @Компания, [Филиал] = @Филиал, [Статус] = @Статус, [Сотрудник] = @Сотрудник, [Серийный номер] = @Серийный_номер, [Инвентарный номер] = @Инвентарный_номер, [Номер партии] = @Номер_партии, [Место] = @Место, [Код продукта] = @Код_продукта, [Количество] = @Количество, [Стоимость (руб.)] = @p1, [Сумма (руб.)] = @p4, [Поставщик] = @Поставщик, [Сервисная организация] = @Сервисная_организация, [Дата инвентаризации] = @Дата_инвентаризации, [Гарантия до] = @Гарантия_до, [Лицензия до] = @Лицензия_до, [Дата списания] = @Дата_списания, [Дата создания] = @Дата_создания, [Id заказа] = @Id_заказа, [Не участвует в инвентаризации] = @Не_участвует_в_инвентаризации, [Домен] = @Домен, [Сетевое имя] = @Сетевое_имя, [IP адрес] = @IP_адрес, [MAC адрес] = @MAC_адрес, [Изменил] = @Изменил, [Дата изменения] = @Дата_изменения WHERE (([Id] = @Original_Id) AND ((@IsNull_Вид = 1 AND [Вид] IS NULL) OR ([Вид] = @Original_Вид)) AND ((@IsNull_Тип = 1 AND [Тип] IS NULL) OR ([Тип] = @Original_Тип)) AND ((@IsNull_Модель = 1 AND [Модель] IS NULL) OR ([Модель] = @Original_Модель)) AND ((@IsNull_Компания = 1 AND [Компания] IS NULL) OR ([Компания] = @Original_Компания)) AND ((@IsNull_Филиал = 1 AND [Филиал] IS NULL) OR ([Филиал] = @Original_Филиал)) AND ((@IsNull_Статус = 1 AND [Статус] IS NULL) OR ([Статус] = @Original_Статус)) AND ((@IsNull_Сотрудник = 1 AND [Сотрудник] IS NULL) OR ([Сотрудник] = @Original_Сотрудник)) AND ((@IsNull_Серийный_номер = 1 AND [Серийный номер] IS NULL) OR ([Серийный номер] = @Original_Серийный_номер)) AND ((@IsNull_Инвентарный_номер = 1 AND [Инвентарный номер] IS NULL) OR ([Инвентарный номер] = @Original_Инвентарный_номер)) AND ((@IsNull_Номер_партии = 1 AND [Номер партии] IS NULL) OR ([Номер партии] = @Original_Номер_партии)) AND ((@IsNull_Место = 1 AND [Место] IS NULL) OR ([Место] = @Original_Место)) AND ((@IsNull_Код_продукта = 1 AND [Код продукта] IS NULL) OR ([Код продукта] = @Original_Код_продукта)) AND ((@IsNull_Количество = 1 AND [Количество] IS NULL) OR ([Количество] = @Original_Количество)) AND ((@p3 = 1 AND [Стоимость (руб.)] IS NULL) OR ([Стоимость (руб.)] = @p2)) AND ((@p6 = 1 AND [Сумма (руб.)] IS NULL) OR ([Сумма (руб.)] = @p5)) AND ((@IsNull_Поставщик = 1 AND [Поставщик] IS NULL) OR ([Поставщик] = @Original_Поставщик)) AND ((@IsNull_Сервисная_организация = 1 AND [Сервисная организация] IS NULL) OR ([Сервисная организация] = @Original_Сервисная_организация)) AND ((@IsNull_Дата_инвентаризации = 1 AND [Дата инвентаризации] IS NULL) OR ([Дата инвентаризации] = @Original_Дата_инвентаризации)) AND ((@IsNull_Гарантия_до = 1 AND [Гарантия до] IS NULL) OR ([Гарантия до] = @Original_Гарантия_до)) AND ((@IsNull_Лицензия_до = 1 AND [Лицензия до] IS NULL) OR ([Лицензия до] = @Original_Лицензия_до)) AND ((@IsNull_Дата_списания = 1 AND [Дата списания] IS NULL) OR ([Дата списания] = @Original_Дата_списания)) AND ((@IsNull_Дата_создания = 1 AND [Дата создания] IS NULL) OR ([Дата создания] = @Original_Дата_создания)) AND ((@IsNull_Id_заказа = 1 AND [Id заказа] IS NULL) OR ([Id заказа] = @Original_Id_заказа)) AND ((@IsNull_Не_участвует_в_инвентаризации = 1 AND [Не участвует в инвентаризации] IS NULL) OR ([Не участвует в инвентаризации] = @Original_Не_участвует_в_инвентаризации)) AND ((@IsNull_Домен = 1 AND [Домен] IS NULL) OR ([Домен] = @Original_Домен)) AND ((@IsNull_Сетевое_имя = 1 AND [Сетевое имя] IS NULL) OR ([Сетевое имя] = @Original_Сетевое_имя)) AND ((@IsNull_IP_адрес = 1 AND [IP адрес] IS NULL) OR ([IP адрес] = @Original_IP_адрес)) AND ((@IsNull_MAC_адрес = 1 AND [MAC адрес] IS NULL) OR ([MAC адрес] = @Original_MAC_адрес)) AND ((@IsNull_Изменил = 1 AND [Изменил] IS NULL) OR ([Изменил] = @Original_Изменил)) AND ((@IsNull_Дата_изменения = 1 AND [Дата изменения] IS NULL) OR ([Дата изменения] = @Original_Дата_изменения)));
+SELECT Id, Вид, Тип, Модель, Компания, Филиал, Статус, Сотрудник, [Серийный номер], [Инвентарный номер], [Номер партии], Место, [Код продукта], Количество, [Стоимость (руб.)], [Сумма (руб.)], Поставщик, [Сервисная организация], [Дата инвентаризации], [Гарантия до], [Лицензия до], [Дата списания], [Дата создания], [Id заказа], [Не участвует в инвентаризации], Домен, [Сетевое имя], [IP адрес], [MAC адрес], Изменил, [Дата изменения] FROM Equipment WHERE (Id = @Id)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Вид" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Вид" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Тип" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Тип" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Модель" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Модель" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Компания" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Компания" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Филиал" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Филиал" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Статус" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Статус" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Сотрудник" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Сотрудник" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Серийный_номер" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Серийный номер" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Инвентарный_номер" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Инвентарный номер" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Номер_партии" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Номер партии" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Место" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Место" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Код_продукта" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Код продукта" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Количество" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Количество" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@p1" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Стоимость (руб.)" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@p4" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Сумма (руб.)" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Поставщик" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Поставщик" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Сервисная_организация" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Сервисная организация" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Дата_инвентаризации" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата инвентаризации" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Гарантия_до" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Гарантия до" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Лицензия_до" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Лицензия до" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Дата_списания" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата списания" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Дата_создания" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата создания" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Id_заказа" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Id заказа" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Не_участвует_в_инвентаризации" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Не участвует в инвентаризации" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Домен" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Домен" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Сетевое_имя" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Сетевое имя" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@IP_адрес" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IP адрес" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MAC_адрес" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MAC адрес" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Изменил" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Изменил" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Дата_изменения" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Дата изменения" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Id" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Вид" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Вид" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Вид" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Вид" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Тип" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Тип" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Тип" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Тип" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Модель" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Модель" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Модель" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Модель" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Компания" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Компания" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Компания" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Компания" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Филиал" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Филиал" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Филиал" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Филиал" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Статус" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Статус" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Статус" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Статус" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Сотрудник" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Сотрудник" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Сотрудник" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Сотрудник" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Серийный_номер" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Серийный номер" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Серийный_номер" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Серийный номер" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Инвентарный_номер" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Инвентарный номер" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Инвентарный_номер" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Инвентарный номер" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Номер_партии" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Номер партии" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Номер_партии" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Номер партии" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Место" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Место" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Место" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Место" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Код_продукта" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Код продукта" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Код_продукта" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Код продукта" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Количество" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Количество" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_Количество" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Количество" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p3" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Стоимость (руб.)" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@p2" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Стоимость (руб.)" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@p6" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Сумма (руб.)" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@p5" Precision="18" ProviderType="Decimal" Scale="0" Size="0" SourceColumn="Сумма (руб.)" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Поставщик" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Поставщик" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Поставщик" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Поставщик" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Сервисная_организация" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Сервисная организация" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Сервисная_организация" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Сервисная организация" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Дата_инвентаризации" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Дата инвентаризации" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Дата_инвентаризации" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата инвентаризации" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Гарантия_до" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Гарантия до" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Гарантия_до" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Гарантия до" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Лицензия_до" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Лицензия до" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Лицензия_до" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Лицензия до" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Дата_списания" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Дата списания" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Дата_списания" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата списания" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Дата_создания" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Дата создания" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_Дата_создания" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="Дата создания" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Id_заказа" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Id заказа" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int64" Direction="Input" ParameterName="@Original_Id_заказа" Precision="0" ProviderType="BigInt" Scale="0" Size="0" SourceColumn="Id заказа" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Не_участвует_в_инвентаризации" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Не участвует в инвентаризации" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Original_Не_участвует_в_инвентаризации" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Не участвует в инвентаризации" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Домен" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Домен" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Домен" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Домен" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Сетевое_имя" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Сетевое имя" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Сетевое_имя" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Сетевое имя" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_IP_адрес" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IP адрес" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_IP_адрес" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IP адрес" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_MAC_адрес" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="MAC адрес" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_MAC_адрес" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MAC адрес" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Изменил" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Изменил" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_Изменил" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Изменил" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_Дата_изменения" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="Дата изменения" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_Дата_изменения" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Дата изменения" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Id" DataSetColumn="Id" />
+              <Mapping SourceColumn="Вид" DataSetColumn="Вид" />
+              <Mapping SourceColumn="Тип" DataSetColumn="Тип" />
+              <Mapping SourceColumn="Модель" DataSetColumn="Модель" />
+              <Mapping SourceColumn="Компания" DataSetColumn="Компания" />
+              <Mapping SourceColumn="Филиал" DataSetColumn="Филиал" />
+              <Mapping SourceColumn="Статус" DataSetColumn="Статус" />
+              <Mapping SourceColumn="Сотрудник" DataSetColumn="Сотрудник" />
+              <Mapping SourceColumn="Серийный номер" DataSetColumn="Серийный номер" />
+              <Mapping SourceColumn="Инвентарный номер" DataSetColumn="Инвентарный номер" />
+              <Mapping SourceColumn="Номер партии" DataSetColumn="Номер партии" />
+              <Mapping SourceColumn="Место" DataSetColumn="Место" />
+              <Mapping SourceColumn="Код продукта" DataSetColumn="Код продукта" />
+              <Mapping SourceColumn="Количество" DataSetColumn="Количество" />
+              <Mapping SourceColumn="Стоимость (руб.)" DataSetColumn="Стоимость (руб_)" />
+              <Mapping SourceColumn="Сумма (руб.)" DataSetColumn="Сумма (руб_)" />
+              <Mapping SourceColumn="Поставщик" DataSetColumn="Поставщик" />
+              <Mapping SourceColumn="Сервисная организация" DataSetColumn="Сервисная организация" />
+              <Mapping SourceColumn="Дата инвентаризации" DataSetColumn="Дата инвентаризации" />
+              <Mapping SourceColumn="Гарантия до" DataSetColumn="Гарантия до" />
+              <Mapping SourceColumn="Лицензия до" DataSetColumn="Лицензия до" />
+              <Mapping SourceColumn="Дата списания" DataSetColumn="Дата списания" />
+              <Mapping SourceColumn="Дата создания" DataSetColumn="Дата создания" />
+              <Mapping SourceColumn="Id заказа" DataSetColumn="Id заказа" />
+              <Mapping SourceColumn="Не участвует в инвентаризации" DataSetColumn="Не участвует в инвентаризации" />
+              <Mapping SourceColumn="Домен" DataSetColumn="Домен" />
+              <Mapping SourceColumn="Сетевое имя" DataSetColumn="Сетевое имя" />
+              <Mapping SourceColumn="IP адрес" DataSetColumn="IP адрес" />
+              <Mapping SourceColumn="MAC адрес" DataSetColumn="MAC адрес" />
+              <Mapping SourceColumn="Изменил" DataSetColumn="Изменил" />
+              <Mapping SourceColumn="Дата изменения" DataSetColumn="Дата изменения" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="GraduationWorkDbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="GraduationWorkDbDataSet" msprop:Generator_DataSetName="GraduationWorkDbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Equipment" msprop:Generator_RowEvHandlerName="EquipmentRowChangeEventHandler" msprop:Generator_RowDeletedName="EquipmentRowDeleted" msprop:Generator_RowDeletingName="EquipmentRowDeleting" msprop:Generator_RowEvArgName="EquipmentRowChangeEvent" msprop:Generator_TablePropName="Equipment" msprop:Generator_RowChangedName="EquipmentRowChanged" msprop:Generator_RowChangingName="EquipmentRowChanging" msprop:Generator_TableClassName="EquipmentDataTable" msprop:Generator_RowClassName="EquipmentRow" msprop:Generator_TableVarName="tableEquipment" msprop:Generator_UserTableName="Equipment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_UserColumnName="Id" type="xs:int" />
+              <xs:element name="Вид" msprop:Generator_ColumnPropNameInRow="Вид" msprop:Generator_ColumnPropNameInTable="ВидColumn" msprop:Generator_ColumnVarNameInTable="columnВид" msprop:Generator_UserColumnName="Вид" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Тип" msprop:Generator_ColumnPropNameInRow="Тип" msprop:Generator_ColumnPropNameInTable="ТипColumn" msprop:Generator_ColumnVarNameInTable="columnТип" msprop:Generator_UserColumnName="Тип" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Модель" msprop:Generator_ColumnPropNameInRow="Модель" msprop:Generator_ColumnPropNameInTable="МодельColumn" msprop:Generator_ColumnVarNameInTable="columnМодель" msprop:Generator_UserColumnName="Модель" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Компания" msprop:Generator_ColumnPropNameInRow="Компания" msprop:Generator_ColumnPropNameInTable="КомпанияColumn" msprop:Generator_ColumnVarNameInTable="columnКомпания" msprop:Generator_UserColumnName="Компания" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Филиал" msprop:Generator_ColumnPropNameInRow="Филиал" msprop:Generator_ColumnPropNameInTable="ФилиалColumn" msprop:Generator_ColumnVarNameInTable="columnФилиал" msprop:Generator_UserColumnName="Филиал" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Статус" msprop:Generator_ColumnPropNameInRow="Статус" msprop:Generator_ColumnPropNameInTable="СтатусColumn" msprop:Generator_ColumnVarNameInTable="columnСтатус" msprop:Generator_UserColumnName="Статус" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Сотрудник" msprop:Generator_ColumnPropNameInRow="Сотрудник" msprop:Generator_ColumnPropNameInTable="СотрудникColumn" msprop:Generator_ColumnVarNameInTable="columnСотрудник" msprop:Generator_UserColumnName="Сотрудник" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Серийный_x0020_номер" msprop:Generator_ColumnPropNameInRow="Серийный_номер" msprop:Generator_ColumnPropNameInTable="Серийный_номерColumn" msprop:Generator_ColumnVarNameInTable="columnСерийный_номер" msprop:Generator_UserColumnName="Серийный номер" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Инвентарный_x0020_номер" msprop:Generator_ColumnPropNameInRow="Инвентарный_номер" msprop:Generator_ColumnPropNameInTable="Инвентарный_номерColumn" msprop:Generator_ColumnVarNameInTable="columnИнвентарный_номер" msprop:Generator_UserColumnName="Инвентарный номер" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Номер_x0020_партии" msprop:Generator_ColumnPropNameInRow="Номер_партии" msprop:Generator_ColumnPropNameInTable="Номер_партииColumn" msprop:Generator_ColumnVarNameInTable="columnНомер_партии" msprop:Generator_UserColumnName="Номер партии" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Место" msprop:Generator_ColumnPropNameInRow="Место" msprop:Generator_ColumnPropNameInTable="МестоColumn" msprop:Generator_ColumnVarNameInTable="columnМесто" msprop:Generator_UserColumnName="Место" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Код_x0020_продукта" msprop:Generator_ColumnPropNameInRow="Код_продукта" msprop:Generator_ColumnPropNameInTable="Код_продуктаColumn" msprop:Generator_ColumnVarNameInTable="columnКод_продукта" msprop:Generator_UserColumnName="Код продукта" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Количество" msprop:Generator_ColumnPropNameInRow="Количество" msprop:Generator_ColumnPropNameInTable="КоличествоColumn" msprop:Generator_ColumnVarNameInTable="columnКоличество" msprop:Generator_UserColumnName="Количество" type="xs:int" minOccurs="0" />
+              <xs:element name="Стоимость_x0020__x0028_руб__x0029_" msprop:Generator_ColumnPropNameInRow="_Стоимость__руб__" msprop:Generator_ColumnPropNameInTable="_Стоимость__руб__Column" msprop:Generator_ColumnVarNameInTable="_columnСтоимость__руб__" msprop:Generator_UserColumnName="Стоимость (руб_)" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Сумма_x0020__x0028_руб__x0029_" msprop:Generator_ColumnPropNameInRow="_Сумма__руб__" msprop:Generator_ColumnPropNameInTable="_Сумма__руб__Column" msprop:Generator_ColumnVarNameInTable="_columnСумма__руб__" msprop:Generator_UserColumnName="Сумма (руб_)" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Поставщик" msprop:Generator_ColumnPropNameInRow="Поставщик" msprop:Generator_ColumnPropNameInTable="ПоставщикColumn" msprop:Generator_ColumnVarNameInTable="columnПоставщик" msprop:Generator_UserColumnName="Поставщик" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Сервисная_x0020_организация" msprop:Generator_ColumnPropNameInRow="Сервисная_организация" msprop:Generator_ColumnPropNameInTable="Сервисная_организацияColumn" msprop:Generator_ColumnVarNameInTable="columnСервисная_организация" msprop:Generator_UserColumnName="Сервисная организация" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_x0020_инвентаризации" msprop:Generator_ColumnPropNameInRow="Дата_инвентаризации" msprop:Generator_ColumnPropNameInTable="Дата_инвентаризацииColumn" msprop:Generator_ColumnVarNameInTable="columnДата_инвентаризации" msprop:Generator_UserColumnName="Дата инвентаризации" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Гарантия_x0020_до" msprop:Generator_ColumnPropNameInRow="Гарантия_до" msprop:Generator_ColumnPropNameInTable="Гарантия_доColumn" msprop:Generator_ColumnVarNameInTable="columnГарантия_до" msprop:Generator_UserColumnName="Гарантия до" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Лицензия_x0020_до" msprop:Generator_ColumnPropNameInRow="Лицензия_до" msprop:Generator_ColumnPropNameInTable="Лицензия_доColumn" msprop:Generator_ColumnVarNameInTable="columnЛицензия_до" msprop:Generator_UserColumnName="Лицензия до" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Дата_x0020_списания" msprop:Generator_ColumnPropNameInRow="Дата_списания" msprop:Generator_ColumnPropNameInTable="Дата_списанияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_списания" msprop:Generator_UserColumnName="Дата списания" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Дата_x0020_создания" msprop:Generator_ColumnPropNameInRow="Дата_создания" msprop:Generator_ColumnPropNameInTable="Дата_созданияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_создания" msprop:Generator_UserColumnName="Дата создания" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Id_x0020_заказа" msprop:Generator_ColumnPropNameInRow="Id_заказа" msprop:Generator_ColumnPropNameInTable="Id_заказаColumn" msprop:Generator_ColumnVarNameInTable="columnId_заказа" msprop:Generator_UserColumnName="Id заказа" type="xs:long" minOccurs="0" />
+              <xs:element name="Не_x0020_участвует_x0020_в_x0020_инвентаризации" msprop:Generator_ColumnPropNameInRow="Не_участвует_в_инвентаризации" msprop:Generator_ColumnPropNameInTable="Не_участвует_в_инвентаризацииColumn" msprop:Generator_ColumnVarNameInTable="columnНе_участвует_в_инвентаризации" msprop:Generator_UserColumnName="Не участвует в инвентаризации" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Домен" msprop:Generator_ColumnPropNameInRow="Домен" msprop:Generator_ColumnPropNameInTable="ДоменColumn" msprop:Generator_ColumnVarNameInTable="columnДомен" msprop:Generator_UserColumnName="Домен" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Сетевое_x0020_имя" msprop:Generator_ColumnPropNameInRow="Сетевое_имя" msprop:Generator_ColumnPropNameInTable="Сетевое_имяColumn" msprop:Generator_ColumnVarNameInTable="columnСетевое_имя" msprop:Generator_UserColumnName="Сетевое имя" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IP_x0020_адрес" msprop:Generator_ColumnPropNameInRow="IP_адрес" msprop:Generator_ColumnPropNameInTable="IP_адресColumn" msprop:Generator_ColumnVarNameInTable="columnIP_адрес" msprop:Generator_UserColumnName="IP адрес" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MAC_x0020_адрес" msprop:Generator_ColumnPropNameInRow="MAC_адрес" msprop:Generator_ColumnPropNameInTable="MAC_адресColumn" msprop:Generator_ColumnVarNameInTable="columnMAC_адрес" msprop:Generator_UserColumnName="MAC адрес" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Изменил" msprop:Generator_ColumnPropNameInRow="Изменил" msprop:Generator_ColumnPropNameInTable="ИзменилColumn" msprop:Generator_ColumnVarNameInTable="columnИзменил" msprop:Generator_UserColumnName="Изменил" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Дата_x0020_изменения" msprop:Generator_ColumnPropNameInRow="Дата_изменения" msprop:Generator_ColumnPropNameInTable="Дата_измененияColumn" msprop:Generator_ColumnVarNameInTable="columnДата_изменения" msprop:Generator_UserColumnName="Дата изменения" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Equipment" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
